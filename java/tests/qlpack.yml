@@ -1,0 +1,8 @@
+dependencies:
+  ghas-trials/java-queries: '*'
+extractor: java
+groups:
+- java
+- test
+name: ghas-trials/java-queries-tests
+tests: .

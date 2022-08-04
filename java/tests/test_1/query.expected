@@ -1,0 +1,14 @@
+edges
+| Test.java:14:10:14:37 | getParameter(...) : String | Test.java:14:4:14:37 | ... + ... |
+| Test.java:18:10:18:37 | getParameter(...) : String | Test.java:18:10:18:54 | replace(...) : String |
+| Test.java:18:10:18:54 | replace(...) : String | Test.java:18:4:18:54 | ... + ... |
+nodes
+| Test.java:14:4:14:37 | ... + ... | semmle.label | ... + ... |
+| Test.java:14:10:14:37 | getParameter(...) : String | semmle.label | getParameter(...) : String |
+| Test.java:18:4:18:54 | ... + ... | semmle.label | ... + ... |
+| Test.java:18:10:18:37 | getParameter(...) : String | semmle.label | getParameter(...) : String |
+| Test.java:18:10:18:54 | replace(...) : String | semmle.label | replace(...) : String |
+subpaths
+#select
+| Test.java:14:4:14:37 | ... + ... | Test.java:14:10:14:37 | getParameter(...) : String | Test.java:14:4:14:37 | ... + ... | Cross-site scripting vulnerability due to $@. | Test.java:14:10:14:37 | getParameter(...) | user-provided value |
+| Test.java:18:4:18:54 | ... + ... | Test.java:18:10:18:37 | getParameter(...) : String | Test.java:18:4:18:54 | ... + ... | Cross-site scripting vulnerability due to $@. | Test.java:18:10:18:37 | getParameter(...) | user-provided value |
