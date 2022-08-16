@@ -1,0 +1,17 @@
+nodes
+| test.js:7:21:7:24 | data |
+| test.js:7:21:7:24 | data |
+| test.js:7:21:7:24 | data |
+| test.js:8:7:8:10 | data |
+| test.js:8:7:8:10 | data |
+| test.js:8:7:8:10 | data |
+edges
+| test.js:7:21:7:24 | data | test.js:8:7:8:10 | data |
+| test.js:7:21:7:24 | data | test.js:8:7:8:10 | data |
+| test.js:7:21:7:24 | data | test.js:8:7:8:10 | data |
+| test.js:7:21:7:24 | data | test.js:8:7:8:10 | data |
+| test.js:7:21:7:24 | data | test.js:8:7:8:10 | data |
+| test.js:7:21:7:24 | data | test.js:8:7:8:10 | data |
+| test.js:7:21:7:24 | data | test.js:8:7:8:10 | data |
+#select
+| test.js:8:7:8:10 | data | test.js:7:21:7:24 | data | test.js:8:7:8:10 | data | Cross-site scripting vulnerability due to $@. | test.js:7:21:7:24 | data | user-provided value |

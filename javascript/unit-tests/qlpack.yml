@@ -1,0 +1,8 @@
+dependencies:
+  ghas-trials/javascript-queries: '*'
+extractor: javascript
+groups:
+- javascript
+- test
+name: ghas-trials/javascript-queries-tests
+tests: .
